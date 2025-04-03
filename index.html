@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rent a Unicorn - Magical Rides Await</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to top right, #ffdde1, #ee9ca7);
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    header {
+      background-color: #fff0f5;
+      padding: 2rem;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    header h1 {
+      font-size: 3rem;
+      color: #c71585;
+    }
+    section {
+      padding: 2rem;
+      max-width: 800px;
+      margin: auto;
+    }
+    .description {
+      font-size: 1.2rem;
+      text-align: center;
+    }
+    form {
+      background-color: #ffffffdd;
+      padding: 2rem;
+      border-radius: 10px;
+      margin-top: 2rem;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    form label {
+      display: block;
+      margin-top: 1rem;
+      font-weight: bold;
+    }
+    form input, form select, form textarea {
+      width: 100%;
+      padding: 0.7rem;
+      margin-top: 0.5rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    form button {
+      margin-top: 1.5rem;
+      padding: 0.8rem 2rem;
+      background-color: #ff69b4;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    form button:hover {
+      background-color: #ff1493;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>🦄 Rent a Unicorn</h1>
+    <p>Bring magic to your events!</p>
+  </header>
+
+  <section>
+    <div class="description">
+      <p>Make your birthdays, weddings, or any special event unforgettable with our magical unicorns. Choose from glittery, rainbow-maned, or enchanted forest-themed unicorns!</p>
+    </div>
+
+    <form>
+      <h2>Book Your Unicorn</h2>
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Your Email</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="date">Event Date</label>
+      <input type="date" id="date" name="date" required>
+
+      <label for="location">Event Location</label>
+      <input type="text" id="location" name="location" required>
+
+      <label for="unicorn">Choose Your Unicorn</label>
+      <select id="unicorn" name="unicorn">
+        <option value="rainbow">Rainbow Sparkles</option>
+        <option value="forest">Forest Spirit</option>
+        <option value="golden">Golden Horn</option>
+      </select>
+
+      <label for="notes">Special Requests</label>
+      <textarea id="notes" name="notes" rows="4" placeholder="Tell us more about your event..."></textarea>
+
+      <button type="submit">Submit Request</button>
+    </form>
+  </section>
+
+</body>
+</html>
